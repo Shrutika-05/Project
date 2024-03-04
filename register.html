@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Food Waste Reduction Management</title>
+<style>
+/* CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/020/714/515/original/set-of-sustainable-lifestyle-people-reducing-food-waste-and-throwing-away-zero-waste-concept-vector.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Add opacity to container background */
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Register Page -->
+    <div id="registerPage">
+      <h2 class="logo">Register</h2>
+      <div class="input-container">
+        <label for="inputUsername">Username:</label>
+        <input type="text" id="inputUsername" name="inputUsername" required>
+      </div>
+      <div class="input-container">
+        <label for="inputEmail">Email:</label>
+        <input type="email" id="inputEmail" name="inputEmail" required>
+      </div>
+      <div class="input-container">
+        <label for="inputPassword">Password:</label>
+        <input type="password" id="inputPassword" name="inputPassword" required>
+      </div>
+      <div class="input-container">
+        <label for="inputConfirmPassword">Confirm Password:</label>
+        <input type="password" id="inputConfirmPassword" name="inputConfirmPassword" required>
+      </div>
+      <button type="submit" class="button" onclick="register()">Register</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </div>
+  
+  <script>
+  function register() {
+    // Perform registration here
+    // For demonstration purposes, display a simple message
+    alert("Registered Successfully!");
+  }
+  </script>
+  
+  </body>
+</html>
